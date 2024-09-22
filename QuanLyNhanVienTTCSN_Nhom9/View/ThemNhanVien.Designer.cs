@@ -133,61 +133,62 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(355, 485);
+            this.button1.Location = new System.Drawing.Point(433, 489);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 29);
             this.button1.TabIndex = 9;
             this.button1.Text = "Xác nhận";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // identificationCardTextBox
             // 
             this.identificationCardTextBox.Location = new System.Drawing.Point(189, 185);
             this.identificationCardTextBox.Name = "identificationCardTextBox";
-            this.identificationCardTextBox.Size = new System.Drawing.Size(236, 22);
-            this.identificationCardTextBox.TabIndex = 10;
+            this.identificationCardTextBox.Size = new System.Drawing.Size(309, 22);
+            this.identificationCardTextBox.TabIndex = 4;
             // 
             // mailTextBox
             // 
             this.mailTextBox.Location = new System.Drawing.Point(189, 236);
             this.mailTextBox.Name = "mailTextBox";
-            this.mailTextBox.Size = new System.Drawing.Size(236, 22);
-            this.mailTextBox.TabIndex = 11;
+            this.mailTextBox.Size = new System.Drawing.Size(309, 22);
+            this.mailTextBox.TabIndex = 5;
             // 
             // phoneNumberTextBox
             // 
             this.phoneNumberTextBox.Location = new System.Drawing.Point(189, 139);
             this.phoneNumberTextBox.Name = "phoneNumberTextBox";
-            this.phoneNumberTextBox.Size = new System.Drawing.Size(236, 22);
-            this.phoneNumberTextBox.TabIndex = 16;
+            this.phoneNumberTextBox.Size = new System.Drawing.Size(309, 22);
+            this.phoneNumberTextBox.TabIndex = 3;
             // 
             // addressTextBox
             // 
             this.addressTextBox.Location = new System.Drawing.Point(189, 85);
             this.addressTextBox.Name = "addressTextBox";
-            this.addressTextBox.Size = new System.Drawing.Size(236, 22);
-            this.addressTextBox.TabIndex = 17;
+            this.addressTextBox.Size = new System.Drawing.Size(309, 22);
+            this.addressTextBox.TabIndex = 2;
             // 
             // fullNameTextBox
             // 
             this.fullNameTextBox.Location = new System.Drawing.Point(189, 42);
             this.fullNameTextBox.Name = "fullNameTextBox";
-            this.fullNameTextBox.Size = new System.Drawing.Size(236, 22);
-            this.fullNameTextBox.TabIndex = 18;
+            this.fullNameTextBox.Size = new System.Drawing.Size(309, 22);
+            this.fullNameTextBox.TabIndex = 1;
             // 
             // dateOfBirth
             // 
             this.dateOfBirth.Location = new System.Drawing.Point(189, 283);
             this.dateOfBirth.Name = "dateOfBirth";
-            this.dateOfBirth.Size = new System.Drawing.Size(236, 22);
-            this.dateOfBirth.TabIndex = 19;
+            this.dateOfBirth.Size = new System.Drawing.Size(309, 22);
+            this.dateOfBirth.TabIndex = 6;
             // 
             // dateJoinCompany
             // 
             this.dateJoinCompany.Location = new System.Drawing.Point(189, 334);
             this.dateJoinCompany.Name = "dateJoinCompany";
-            this.dateJoinCompany.Size = new System.Drawing.Size(236, 22);
-            this.dateJoinCompany.TabIndex = 20;
+            this.dateJoinCompany.Size = new System.Drawing.Size(309, 22);
+            this.dateJoinCompany.TabIndex = 7;
             // 
             // genderCombobox
             // 
@@ -198,21 +199,24 @@
             this.genderCombobox.Location = new System.Drawing.Point(189, 380);
             this.genderCombobox.Name = "genderCombobox";
             this.genderCombobox.Size = new System.Drawing.Size(71, 24);
-            this.genderCombobox.TabIndex = 21;
+            this.genderCombobox.TabIndex = 8;
+            this.genderCombobox.Text = "Nữ";
+            this.genderCombobox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.genderCombobox_KeyPress);
             // 
             // positionComboBox
             // 
             this.positionComboBox.FormattingEnabled = true;
             this.positionComboBox.Location = new System.Drawing.Point(189, 420);
             this.positionComboBox.Name = "positionComboBox";
-            this.positionComboBox.Size = new System.Drawing.Size(232, 24);
-            this.positionComboBox.TabIndex = 22;
+            this.positionComboBox.Size = new System.Drawing.Size(305, 24);
+            this.positionComboBox.TabIndex = 9;
+            this.positionComboBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.positionComboBox_KeyPress);
             // 
             // ThemNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(457, 530);
+            this.ClientSize = new System.Drawing.Size(529, 530);
             this.Controls.Add(this.positionComboBox);
             this.Controls.Add(this.genderCombobox);
             this.Controls.Add(this.dateJoinCompany);

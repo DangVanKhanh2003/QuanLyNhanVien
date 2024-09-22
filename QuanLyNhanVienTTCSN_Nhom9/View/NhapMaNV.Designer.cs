@@ -42,6 +42,7 @@
             this.confirm.TabIndex = 0;
             this.confirm.Text = "Xác nhận";
             this.confirm.UseVisualStyleBackColor = true;
+            this.confirm.Click += new System.EventHandler(this.confirm_Click);
             // 
             // maNVTextBox
             // 

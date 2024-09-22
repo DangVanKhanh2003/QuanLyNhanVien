@@ -229,11 +229,36 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\ChangePasswordAdminControl.cs" />
+    <Compile Include="Control\ChangePasswordControl.cs" />
+    <Compile Include="Control\DangNhapControl.cs" />
+    <Compile Include="Control\Function.cs" />
+    <Compile Include="Control\ManageForm.cs" />
+    <Compile Include="Control\ProfileControl.cs" />
+    <Compile Include="Control\WorkWithDatabase.cs" />
     <Compile Include="View\AdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChiTietNghiPhepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ChiTietNghiPhepForm.Designer.cs">
+      <DependentUpon>ChiTietNghiPhepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChiTietNhanVienForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ChiTietNhanVienForm.Designer.cs">
+      <DependentUpon>ChiTietNhanVienForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ChiTietQuanLyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ChiTietQuanLyForm.Designer.cs">
+      <DependentUpon>ChiTietQuanLyForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\DangNhapForm.cs">
       <SubType>Form</SubType>
@@ -243,11 +268,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\DoiMatKhauAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\DoiMatKhauAdmin.Designer.cs">
+      <DependentUpon>DoiMatKhauAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\DoiMKForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\DoiMKForm.Designer.cs">
       <DependentUpon>DoiMKForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\NhanVienForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\NhanVienForm.Designer.cs">
+      <DependentUpon>NhanVienForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\NhapMaChucVu.cs">
       <SubType>Form</SubType>
@@ -285,11 +322,11 @@
     <Compile Include="View\NhapMaTK.Designer.cs">
       <DependentUpon>NhapMaTK.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\PhanHoiForm.cs">
+    <Compile Include="View\NhapTangCaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\PhanHoiForm.Designer.cs">
-      <DependentUpon>PhanHoiForm.cs</DependentUpon>
+    <Compile Include="View\NhapTangCaForm.Designer.cs">
+      <DependentUpon>NhapTangCaForm.cs</DependentUpon>
     </Compile>
     <Compile Include="View\ProfileForm.cs">
       <SubType>Form</SubType>
@@ -327,6 +364,60 @@
     <Compile Include="View\SapXepTKForm.Designer.cs">
       <DependentUpon>SapXepTKForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\SuaChucVuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SuaChucVuForm.Designer.cs">
+      <DependentUpon>SuaChucVuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SuaLuongFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SuaLuongFrom.Designer.cs">
+      <DependentUpon>SuaLuongFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SuaNghiPhepForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SuaNghiPhepForm2.Designer.cs">
+      <DependentUpon>SuaNghiPhepForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SuaNghiPhepFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SuaNghiPhepFrom.Designer.cs">
+      <DependentUpon>SuaNghiPhepFrom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SuaNhanVienForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SuaNhanVienForm.Designer.cs">
+      <DependentUpon>SuaNhanVienForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SuaPhongBanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SuaPhongBanForm.Designer.cs">
+      <DependentUpon>SuaPhongBanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SuaTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SuaTaiKhoan.Designer.cs">
+      <DependentUpon>SuaTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SuaTangCaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SuaTangCaForm.Designer.cs">
+      <DependentUpon>SuaTangCaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\test.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\test.Designer.cs">
+      <DependentUpon>test.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\ThemChucVu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -363,38 +454,71 @@
     <Compile Include="View\ThemTaiKhoan.Designer.cs">
       <DependentUpon>ThemTaiKhoan.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\TimKiemChuVu.cs">
+    <Compile Include="View\ThemTangCaForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\TimKiemChuVu.Designer.cs">
-      <DependentUpon>TimKiemChuVu.cs</DependentUpon>
+    <Compile Include="View\ThemTangCaForm.Designer.cs">
+      <DependentUpon>ThemTangCaForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\TimKiemLuong.cs">
+    <Compile Include="View\TimKiemChucVuForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\TimKiemLuong.Designer.cs">
-      <DependentUpon>TimKiemLuong.cs</DependentUpon>
+    <Compile Include="View\TimKiemChucVuForm.Designer.cs">
+      <DependentUpon>TimKiemChucVuForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\TimKiemNghiPhep.cs">
+    <Compile Include="View\TimKiemLuongForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\TimKiemNghiPhep.Designer.cs">
-      <DependentUpon>TimKiemNghiPhep.cs</DependentUpon>
+    <Compile Include="View\TimKiemLuongForm.Designer.cs">
+      <DependentUpon>TimKiemLuongForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\TimKiemNV.cs">
+    <Compile Include="View\TimKiemNghiPhepForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\TimKiemNV.Designer.cs">
-      <DependentUpon>TimKiemNV.cs</DependentUpon>
+    <Compile Include="View\TimKiemNghiPhepForm.Designer.cs">
+      <DependentUpon>TimKiemNghiPhepForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\TimKiemTK.cs">
+    <Compile Include="View\TimKiemNhanVienForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="View\TimKiemTK.Designer.cs">
-      <DependentUpon>TimKiemTK.cs</DependentUpon>
+    <Compile Include="View\TimKiemNhanVienForm.Designer.cs">
+      <DependentUpon>TimKiemNhanVienForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TimKiemTaiKhoanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TimKiemTaiKhoanForm.Designer.cs">
+      <DependentUpon>TimKiemTaiKhoanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\TimKiemTangCaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\TimKiemTangCaForm.Designer.cs">
+      <DependentUpon>TimKiemTangCaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\XoaLuongForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\XoaLuongForm.Designer.cs">
+      <DependentUpon>XoaLuongForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\XoaNghiPhepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\XoaNghiPhepForm.Designer.cs">
+      <DependentUpon>XoaNghiPhepForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="View\AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ChiTietNghiPhepForm.resx">
+      <DependentUpon>ChiTietNghiPhepForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ChiTietNhanVienForm.resx">
+      <DependentUpon>ChiTietNhanVienForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ChiTietQuanLyForm.resx">
+      <DependentUpon>ChiTietQuanLyForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\DangNhapForm.resx">
       <DependentUpon>DangNhapForm.cs</DependentUpon>
@@ -409,8 +533,14 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\DoiMatKhauAdmin.resx">
+      <DependentUpon>DoiMatKhauAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\DoiMKForm.resx">
       <DependentUpon>DoiMKForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\NhanVienForm.resx">
+      <DependentUpon>NhanVienForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\NhapMaChucVu.resx">
       <DependentUpon>NhapMaChucVu.cs</DependentUpon>
@@ -430,8 +560,8 @@
     <EmbeddedResource Include="View\NhapMaTK.resx">
       <DependentUpon>NhapMaTK.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\PhanHoiForm.resx">
-      <DependentUpon>PhanHoiForm.cs</DependentUpon>
+    <EmbeddedResource Include="View\NhapTangCaForm.resx">
+      <DependentUpon>NhapTangCaForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\ProfileForm.resx">
       <DependentUpon>ProfileForm.cs</DependentUpon>
@@ -451,6 +581,33 @@
     <EmbeddedResource Include="View\SapXepTKForm.resx">
       <DependentUpon>SapXepTKForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\SuaChucVuForm.resx">
+      <DependentUpon>SuaChucVuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SuaLuongFrom.resx">
+      <DependentUpon>SuaLuongFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SuaNghiPhepForm2.resx">
+      <DependentUpon>SuaNghiPhepForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SuaNghiPhepFrom.resx">
+      <DependentUpon>SuaNghiPhepFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SuaNhanVienForm.resx">
+      <DependentUpon>SuaNhanVienForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SuaPhongBanForm.resx">
+      <DependentUpon>SuaPhongBanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SuaTaiKhoan.resx">
+      <DependentUpon>SuaTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SuaTangCaForm.resx">
+      <DependentUpon>SuaTangCaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\test.resx">
+      <DependentUpon>test.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\ThemChucVu.resx">
       <DependentUpon>ThemChucVu.cs</DependentUpon>
     </EmbeddedResource>
@@ -469,20 +626,32 @@
     <EmbeddedResource Include="View\ThemTaiKhoan.resx">
       <DependentUpon>ThemTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\TimKiemChuVu.resx">
-      <DependentUpon>TimKiemChuVu.cs</DependentUpon>
+    <EmbeddedResource Include="View\ThemTangCaForm.resx">
+      <DependentUpon>ThemTangCaForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\TimKiemLuong.resx">
-      <DependentUpon>TimKiemLuong.cs</DependentUpon>
+    <EmbeddedResource Include="View\TimKiemChucVuForm.resx">
+      <DependentUpon>TimKiemChucVuForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\TimKiemNghiPhep.resx">
-      <DependentUpon>TimKiemNghiPhep.cs</DependentUpon>
+    <EmbeddedResource Include="View\TimKiemLuongForm.resx">
+      <DependentUpon>TimKiemLuongForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\TimKiemNV.resx">
-      <DependentUpon>TimKiemNV.cs</DependentUpon>
+    <EmbeddedResource Include="View\TimKiemNghiPhepForm.resx">
+      <DependentUpon>TimKiemNghiPhepForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="View\TimKiemTK.resx">
-      <DependentUpon>TimKiemTK.cs</DependentUpon>
+    <EmbeddedResource Include="View\TimKiemNhanVienForm.resx">
+      <DependentUpon>TimKiemNhanVienForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TimKiemTaiKhoanForm.resx">
+      <DependentUpon>TimKiemTaiKhoanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\TimKiemTangCaForm.resx">
+      <DependentUpon>TimKiemTangCaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\XoaLuongForm.resx">
+      <DependentUpon>XoaLuongForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\XoaNghiPhepForm.resx">
+      <DependentUpon>XoaNghiPhepForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -527,6 +696,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\changePassword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />

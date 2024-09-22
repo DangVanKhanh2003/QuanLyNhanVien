@@ -52,7 +52,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(43, 114);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 20);
+            this.label2.Size = new System.Drawing.Size(89, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Mật khẩu mới:";
             // 
@@ -69,6 +69,7 @@
             // 
             this.currentPasswordTextBox.Location = new System.Drawing.Point(197, 60);
             this.currentPasswordTextBox.Name = "currentPasswordTextBox";
+            this.currentPasswordTextBox.PasswordChar = '*';
             this.currentPasswordTextBox.Size = new System.Drawing.Size(202, 22);
             this.currentPasswordTextBox.TabIndex = 3;
             // 
@@ -76,6 +77,7 @@
             // 
             this.newPasswordTextBox.Location = new System.Drawing.Point(197, 111);
             this.newPasswordTextBox.Name = "newPasswordTextBox";
+            this.newPasswordTextBox.PasswordChar = '*';
             this.newPasswordTextBox.Size = new System.Drawing.Size(202, 22);
             this.newPasswordTextBox.TabIndex = 4;
             // 
@@ -83,6 +85,7 @@
             // 
             this.enterAgainPassword.Location = new System.Drawing.Point(197, 165);
             this.enterAgainPassword.Name = "enterAgainPassword";
+            this.enterAgainPassword.PasswordChar = '*';
             this.enterAgainPassword.Size = new System.Drawing.Size(202, 22);
             this.enterAgainPassword.TabIndex = 5;
             // 
@@ -94,6 +97,7 @@
             this.confirm.TabIndex = 6;
             this.confirm.Text = "Xác nhận";
             this.confirm.UseVisualStyleBackColor = true;
+            this.confirm.Click += new System.EventHandler(this.confirm_Click);
             // 
             // DoiMKForm
             // 
@@ -113,6 +117,7 @@
             this.Name = "DoiMKForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DoiMKForm";
+            this.Load += new System.EventHandler(this.DoiMKForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

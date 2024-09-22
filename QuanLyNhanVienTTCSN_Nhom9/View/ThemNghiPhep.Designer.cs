@@ -34,8 +34,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.confirm = new System.Windows.Forms.Button();
             this.idEmployeeTextBox = new System.Windows.Forms.TextBox();
-            this.toDatePickTime = new System.Windows.Forms.DateTimePicker();
             this.fromDatePickTime = new System.Windows.Forms.DateTimePicker();
+            this.toDatePickTime = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -73,6 +73,7 @@
             this.confirm.TabIndex = 3;
             this.confirm.Text = "Xác nhận";
             this.confirm.UseVisualStyleBackColor = true;
+            this.confirm.Click += new System.EventHandler(this.confirm_Click);
             // 
             // idEmployeeTextBox
             // 
@@ -81,28 +82,29 @@
             this.idEmployeeTextBox.Size = new System.Drawing.Size(237, 22);
             this.idEmployeeTextBox.TabIndex = 4;
             // 
-            // toDatePickTime
-            // 
-            this.toDatePickTime.Location = new System.Drawing.Point(158, 104);
-            this.toDatePickTime.Name = "toDatePickTime";
-            this.toDatePickTime.Size = new System.Drawing.Size(237, 22);
-            this.toDatePickTime.TabIndex = 5;
-            // 
             // fromDatePickTime
             // 
-            this.fromDatePickTime.Location = new System.Drawing.Point(158, 159);
+            this.fromDatePickTime.Location = new System.Drawing.Point(158, 104);
             this.fromDatePickTime.Name = "fromDatePickTime";
             this.fromDatePickTime.Size = new System.Drawing.Size(237, 22);
-            this.fromDatePickTime.TabIndex = 6;
-            this.fromDatePickTime.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
+            this.fromDatePickTime.TabIndex = 5;
+            this.fromDatePickTime.ValueChanged += new System.EventHandler(this.toDatePickTime_ValueChanged);
+            // 
+            // toDatePickTime
+            // 
+            this.toDatePickTime.Location = new System.Drawing.Point(158, 159);
+            this.toDatePickTime.Name = "toDatePickTime";
+            this.toDatePickTime.Size = new System.Drawing.Size(237, 22);
+            this.toDatePickTime.TabIndex = 6;
+            this.toDatePickTime.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
             // 
             // ThemNghiPhep
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(458, 300);
-            this.Controls.Add(this.fromDatePickTime);
             this.Controls.Add(this.toDatePickTime);
+            this.Controls.Add(this.fromDatePickTime);
             this.Controls.Add(this.idEmployeeTextBox);
             this.Controls.Add(this.confirm);
             this.Controls.Add(this.label3);
@@ -126,7 +128,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button confirm;
         private System.Windows.Forms.TextBox idEmployeeTextBox;
-        private System.Windows.Forms.DateTimePicker toDatePickTime;
         private System.Windows.Forms.DateTimePicker fromDatePickTime;
+        private System.Windows.Forms.DateTimePicker toDatePickTime;
     }
 }

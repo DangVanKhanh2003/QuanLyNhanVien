@@ -113,44 +113,46 @@
             this.idEmployeeTextBox.Location = new System.Drawing.Point(181, 35);
             this.idEmployeeTextBox.Name = "idEmployeeTextBox";
             this.idEmployeeTextBox.Size = new System.Drawing.Size(196, 22);
-            this.idEmployeeTextBox.TabIndex = 7;
+            this.idEmployeeTextBox.TabIndex = 1;
             // 
             // allowancesTextBox
             // 
             this.allowancesTextBox.Location = new System.Drawing.Point(181, 196);
             this.allowancesTextBox.Name = "allowancesTextBox";
             this.allowancesTextBox.Size = new System.Drawing.Size(196, 22);
-            this.allowancesTextBox.TabIndex = 8;
+            this.allowancesTextBox.TabIndex = 4;
             // 
             // salaryAdvancesTextBox
             // 
             this.salaryAdvancesTextBox.Location = new System.Drawing.Point(181, 246);
             this.salaryAdvancesTextBox.Name = "salaryAdvancesTextBox";
             this.salaryAdvancesTextBox.Size = new System.Drawing.Size(196, 22);
-            this.salaryAdvancesTextBox.TabIndex = 9;
+            this.salaryAdvancesTextBox.TabIndex = 5;
             // 
             // bonusTextBox
             // 
             this.bonusTextBox.Location = new System.Drawing.Point(181, 141);
             this.bonusTextBox.Name = "bonusTextBox";
             this.bonusTextBox.Size = new System.Drawing.Size(196, 22);
-            this.bonusTextBox.TabIndex = 10;
+            this.bonusTextBox.TabIndex = 3;
             // 
             // stiffSalaryTextBox
             // 
             this.stiffSalaryTextBox.Location = new System.Drawing.Point(181, 85);
             this.stiffSalaryTextBox.Name = "stiffSalaryTextBox";
             this.stiffSalaryTextBox.Size = new System.Drawing.Size(196, 22);
-            this.stiffSalaryTextBox.TabIndex = 11;
+            this.stiffSalaryTextBox.TabIndex = 2;
+            this.stiffSalaryTextBox.TextChanged += new System.EventHandler(this.stiffSalaryTextBox_TextChanged);
             // 
             // confirm
             // 
             this.confirm.Location = new System.Drawing.Point(386, 401);
             this.confirm.Name = "confirm";
             this.confirm.Size = new System.Drawing.Size(86, 25);
-            this.confirm.TabIndex = 12;
+            this.confirm.TabIndex = 7;
             this.confirm.Text = "Xác nhận";
             this.confirm.UseVisualStyleBackColor = true;
+            this.confirm.Click += new System.EventHandler(this.confirm_Click);
             // 
             // ThemLuong
             // 

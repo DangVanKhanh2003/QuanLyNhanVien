@@ -58,6 +58,7 @@
             this.confirm.TabIndex = 3;
             this.confirm.Text = "Xác nhận";
             this.confirm.UseVisualStyleBackColor = true;
+            this.confirm.Click += new System.EventHandler(this.confirm_Click);
             // 
             // NhapMaPhongBan
             // 
@@ -73,6 +74,7 @@
             this.Name = "NhapMaPhongBan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "NhapMaPhongBan";
+            this.Load += new System.EventHandler(this.NhapMaPhongBan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

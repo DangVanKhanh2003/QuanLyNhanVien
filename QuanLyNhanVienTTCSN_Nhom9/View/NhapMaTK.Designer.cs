@@ -45,25 +45,26 @@
             // 
             // idAccountTextBox
             // 
-            this.idAccountTextBox.Location = new System.Drawing.Point(107, 47);
+            this.idAccountTextBox.Location = new System.Drawing.Point(124, 44);
             this.idAccountTextBox.Name = "idAccountTextBox";
             this.idAccountTextBox.Size = new System.Drawing.Size(231, 22);
             this.idAccountTextBox.TabIndex = 4;
             // 
             // confirm
             // 
-            this.confirm.Location = new System.Drawing.Point(248, 106);
+            this.confirm.Location = new System.Drawing.Point(285, 106);
             this.confirm.Name = "confirm";
             this.confirm.Size = new System.Drawing.Size(90, 28);
             this.confirm.TabIndex = 3;
             this.confirm.Text = "Xác nhận";
             this.confirm.UseVisualStyleBackColor = true;
+            this.confirm.Click += new System.EventHandler(this.confirm_Click);
             // 
             // NhapMaTK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(346, 146);
+            this.ClientSize = new System.Drawing.Size(387, 146);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.idAccountTextBox);
             this.Controls.Add(this.confirm);

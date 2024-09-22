@@ -52,18 +52,19 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(304, 107);
+            this.button1.Location = new System.Drawing.Point(271, 107);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 26);
+            this.button1.Size = new System.Drawing.Size(112, 26);
             this.button1.TabIndex = 2;
             this.button1.Text = "Xác nhận";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ThemPhongBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(392, 141);
+            this.ClientSize = new System.Drawing.Size(404, 145);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.tenPhongBanTextBox);
             this.Controls.Add(this.label1);

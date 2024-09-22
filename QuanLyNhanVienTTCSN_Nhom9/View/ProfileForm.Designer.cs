@@ -51,8 +51,9 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.DepartmentTextBox = new System.Windows.Forms.TextBox();
-            this.feedbackBtn = new System.Windows.Forms.Button();
             this.ChangePasswordBtn = new System.Windows.Forms.Button();
+            this.logOutBtn = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // fullNameTextBox
@@ -242,34 +243,49 @@
             this.DepartmentTextBox.Size = new System.Drawing.Size(236, 22);
             this.DepartmentTextBox.TabIndex = 48;
             // 
-            // feedbackBtn
-            // 
-            this.feedbackBtn.Location = new System.Drawing.Point(449, 570);
-            this.feedbackBtn.Name = "feedbackBtn";
-            this.feedbackBtn.Size = new System.Drawing.Size(109, 38);
-            this.feedbackBtn.TabIndex = 49;
-            this.feedbackBtn.Text = "Phản hồi";
-            this.feedbackBtn.UseVisualStyleBackColor = true;
-            this.feedbackBtn.Click += new System.EventHandler(this.feedbackBtn_Click);
-            // 
             // ChangePasswordBtn
             // 
             this.ChangePasswordBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ChangePasswordBtn.Location = new System.Drawing.Point(320, 571);
+            this.ChangePasswordBtn.Location = new System.Drawing.Point(375, 559);
             this.ChangePasswordBtn.Name = "ChangePasswordBtn";
-            this.ChangePasswordBtn.Size = new System.Drawing.Size(108, 38);
+            this.ChangePasswordBtn.Size = new System.Drawing.Size(108, 40);
             this.ChangePasswordBtn.TabIndex = 50;
             this.ChangePasswordBtn.Text = "Đổi mật khẩu";
             this.ChangePasswordBtn.UseVisualStyleBackColor = true;
             this.ChangePasswordBtn.Click += new System.EventHandler(this.ChangePasswordBtn_Click);
             // 
+            // logOutBtn
+            // 
+            this.logOutBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logOutBtn.BackgroundImage")));
+            this.logOutBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.logOutBtn.Location = new System.Drawing.Point(533, 618);
+            this.logOutBtn.Name = "logOutBtn";
+            this.logOutBtn.Size = new System.Drawing.Size(49, 39);
+            this.logOutBtn.TabIndex = 52;
+            this.logOutBtn.Click += new System.EventHandler(this.logOutBtn_Click);
+            this.logOutBtn.Paint += new System.Windows.Forms.PaintEventHandler(this.logOutBtn_Paint);
+            this.logOutBtn.MouseLeave += new System.EventHandler(this.logOutBtn_MouseLeave);
+            this.logOutBtn.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.logOutBtn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.logOutBtn_MouseUp);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(203, 558);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(90, 40);
+            this.button1.TabIndex = 76;
+            this.button1.Text = "Chi tiết";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // ProfileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 620);
+            this.ClientSize = new System.Drawing.Size(594, 666);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.logOutBtn);
             this.Controls.Add(this.ChangePasswordBtn);
-            this.Controls.Add(this.feedbackBtn);
             this.Controls.Add(this.DepartmentTextBox);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -298,6 +314,7 @@
             this.Name = "ProfileForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thông tin cá nhân";
+            this.Load += new System.EventHandler(this.ProfileForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,7 +343,8 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox DepartmentTextBox;
-        private System.Windows.Forms.Button feedbackBtn;
         private System.Windows.Forms.Button ChangePasswordBtn;
+        private System.Windows.Forms.Panel logOutBtn;
+        private System.Windows.Forms.Button button1;
     }
 }

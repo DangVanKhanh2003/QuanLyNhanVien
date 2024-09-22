@@ -1,4 +1,5 @@
-﻿using QuanLyNhanVienTTCSN_Nhom9.View;
+﻿using QuanLyNhanVienTTCSN_Nhom9.Control;
+using QuanLyNhanVienTTCSN_Nhom9.View;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,12 @@ namespace QuanLyNhanVienTTCSN_Nhom9
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QuanLyForm());
+            //Application.Run(new ChiTietQuanLyForm("NV01"));
+            Application.Run(new DangNhapForm());
+            //Application.Run(new NhanVienForm("TK10","NV10"));
+            //Application.Run(new AdminForm("AD01"));
+            //ManageForm mana = new ManageForm();
+           //MessageBox.Show(mana.countOnLeave(1, 2023,12, "NV03").ToString());
         }
     }
 }

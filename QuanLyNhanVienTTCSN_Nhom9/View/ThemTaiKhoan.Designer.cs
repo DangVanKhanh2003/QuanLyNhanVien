@@ -32,18 +32,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.idEmployeeTextBox = new System.Windows.Forms.TextBox();
             this.userNameTextBox = new System.Windows.Forms.TextBox();
             this.passwordTextBox = new System.Windows.Forms.TextBox();
-            this.positionComboBox = new System.Windows.Forms.ComboBox();
             this.Comfirm = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.typeAccComboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(62, 86);
+            this.label1.Location = new System.Drawing.Point(41, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 16);
             this.label1.TabIndex = 0;
@@ -52,7 +52,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(62, 143);
+            this.label2.Location = new System.Drawing.Point(41, 78);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(101, 16);
             this.label2.TabIndex = 1;
@@ -61,71 +61,76 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(62, 198);
+            this.label3.Location = new System.Drawing.Point(41, 120);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(64, 16);
             this.label3.TabIndex = 2;
             this.label3.Text = "Mật khẩu:";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(62, 255);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 16);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Chức vụ:";
-            // 
             // idEmployeeTextBox
             // 
-            this.idEmployeeTextBox.Location = new System.Drawing.Point(190, 80);
+            this.idEmployeeTextBox.Location = new System.Drawing.Point(169, 29);
             this.idEmployeeTextBox.Name = "idEmployeeTextBox";
-            this.idEmployeeTextBox.Size = new System.Drawing.Size(148, 22);
-            this.idEmployeeTextBox.TabIndex = 4;
+            this.idEmployeeTextBox.Size = new System.Drawing.Size(265, 22);
+            this.idEmployeeTextBox.TabIndex = 1;
             // 
             // userNameTextBox
             // 
-            this.userNameTextBox.Location = new System.Drawing.Point(190, 146);
+            this.userNameTextBox.Location = new System.Drawing.Point(169, 72);
             this.userNameTextBox.Name = "userNameTextBox";
-            this.userNameTextBox.Size = new System.Drawing.Size(148, 22);
-            this.userNameTextBox.TabIndex = 5;
+            this.userNameTextBox.Size = new System.Drawing.Size(265, 22);
+            this.userNameTextBox.TabIndex = 2;
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Location = new System.Drawing.Point(190, 195);
+            this.passwordTextBox.Location = new System.Drawing.Point(169, 114);
             this.passwordTextBox.Name = "passwordTextBox";
-            this.passwordTextBox.Size = new System.Drawing.Size(148, 22);
-            this.passwordTextBox.TabIndex = 6;
+            this.passwordTextBox.Size = new System.Drawing.Size(265, 22);
+            this.passwordTextBox.TabIndex = 3;
             this.passwordTextBox.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // positionComboBox
-            // 
-            this.positionComboBox.FormattingEnabled = true;
-            this.positionComboBox.Location = new System.Drawing.Point(190, 255);
-            this.positionComboBox.Name = "positionComboBox";
-            this.positionComboBox.Size = new System.Drawing.Size(148, 24);
-            this.positionComboBox.TabIndex = 7;
             // 
             // Comfirm
             // 
-            this.Comfirm.Location = new System.Drawing.Point(309, 343);
+            this.Comfirm.Location = new System.Drawing.Point(391, 214);
             this.Comfirm.Name = "Comfirm";
             this.Comfirm.Size = new System.Drawing.Size(81, 27);
             this.Comfirm.TabIndex = 8;
             this.Comfirm.Text = "Xác nhận";
             this.Comfirm.UseVisualStyleBackColor = true;
+            this.Comfirm.Click += new System.EventHandler(this.Comfirm_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(41, 164);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(93, 16);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "Loại tài khoản:";
+            // 
+            // typeAccComboBox
+            // 
+            this.typeAccComboBox.FormattingEnabled = true;
+            this.typeAccComboBox.Items.AddRange(new object[] {
+            "Quản lý",
+            "Nhân viên"});
+            this.typeAccComboBox.Location = new System.Drawing.Point(169, 156);
+            this.typeAccComboBox.Name = "typeAccComboBox";
+            this.typeAccComboBox.Size = new System.Drawing.Size(265, 24);
+            this.typeAccComboBox.TabIndex = 22;
+            this.typeAccComboBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.typeAccComboBox_KeyPress);
             // 
             // ThemTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(402, 377);
+            this.ClientSize = new System.Drawing.Size(484, 251);
+            this.Controls.Add(this.typeAccComboBox);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.Comfirm);
-            this.Controls.Add(this.positionComboBox);
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.userNameTextBox);
             this.Controls.Add(this.idEmployeeTextBox);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -135,6 +140,7 @@
             this.Name = "ThemTaiKhoan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThemTaiKhoan";
+            this.Load += new System.EventHandler(this.ThemTaiKhoan_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -145,11 +151,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox idEmployeeTextBox;
         private System.Windows.Forms.TextBox userNameTextBox;
         private System.Windows.Forms.TextBox passwordTextBox;
-        private System.Windows.Forms.ComboBox positionComboBox;
         private System.Windows.Forms.Button Comfirm;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox typeAccComboBox;
     }
 }
